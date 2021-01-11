@@ -23,6 +23,13 @@ html, body {
 
 /* All screen sizes */
 
+.waiting {
+  width: 100vw;
+  height: 100vh;
+  background-image: url("/img/mykyta-martynenko-k7lWhRlO53U-unsplash.jpg");
+  background-size: cover;
+}
+
 .section {
   border: 0;
   padding: 1em;
@@ -75,7 +82,12 @@ a:hover, a:active {
 
 /* Break at Width 766 */
 @media only screen and (max-width: 766px) {
-
+  .waiting {
+    background-size: 275vw;
+    position:absolute;
+    left: -20vw;
+    width: 120vw;
+  }
 }
 
 /* Break at Width 478 */
