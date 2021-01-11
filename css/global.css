@@ -1,0 +1,81 @@
+:root {
+  box-sizing: border-box;
+  
+  /* Colours */
+  --vivid-sky-blue: hsl(194, 85%, 62%);
+  --ultramarine-blue:hsl(229, 83%, 60%);
+  --trypan-blue: hsl(258, 86%, 34%);
+  --purple: hsl(276, 91%, 38%);
+  --flickr-pink: hsl(333, 93%, 56%);
+  background-color: white;
+  color: black;
+
+  /* Fonts */
+  font-family: 'Open Sans', Verdana, sans-serif;
+  font-size: 1rem;
+  line-height: 1.6rem;
+}
+
+html, body {
+  margin: 0;
+  padding: 0;
+}
+
+/* All screen sizes */
+
+.section {
+  border: 0;
+  padding: 1em;
+}
+
+h1, h2, h3 {
+  font-weight: 700;
+}
+
+a:link, a:visited {
+  color: black;
+  text-decoration: none;
+}
+
+a:hover, a:active {
+  color: var(--flickr-pink);
+  text-decoration: none;
+}
+
+.hero {
+  background-color: var(--vivid-sky-blue);
+}
+
+#skills {
+  background-color: white;
+}
+
+#tally-investment-records {
+  background-color: var(--ultramarine-blue);
+}
+
+#collected-wisdom {
+  background-color: var(--trypan-blue);
+}
+
+#my-other-life {
+  background-color: var(--purple);
+}
+
+#final {
+  background-color: var(--flickr-pink);
+}
+
+.footer {
+  background-color: black;
+  color: white;
+}
+
+/* Break at Width 990 */
+
+/* Break at Width 766 */
+@media only screen and (max-width: 766px) {
+
+}
+
+/* Break at Width 478 */
