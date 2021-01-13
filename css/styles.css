@@ -10,6 +10,9 @@
   background-color: white;
   color: black;
 
+  /* Transition length for menu */
+  --menu-transition-length: 0.1s;
+
   /* Fonts */
   font-family: 'Open Sans', Verdana, sans-serif;
   font-size: 20px;
@@ -53,19 +56,27 @@ a:hover, a:active {
   display: grid;
   grid-template-columns: auto 1fr auto;
   position: relative;
-  height: 
+  background-color: red;
+}
+
+.header__icon {
+  transition: transform var(--menu-transition-length);
+  transform: scaleY(1); 
 }
 
 .nav {
   list-style-type: none;
   background-color: white;
-  position: absolute;
   z-index: 1;
+  position: absolute;
   right: 0;
+  top: 2rem;
+  bottom: auto;
   padding: 1rem 2rem 1rem 2rem;
   min-width: 160px;
   min-width: 160px;
   box-shadow: -16px 16px 10px 0px rgba(0,0,0,0.5);
+  transition: bottom var(--menu-transition-length), top var(--menu-transition-length);
 }
 
 .nav__item {

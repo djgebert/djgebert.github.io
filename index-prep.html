@@ -20,10 +20,12 @@
         DG
       </div>
       <div><!-- Empty to fill space --></div>
-      <div class="header__dropdown" id="menuButton">
-        <!-- Menu icon from https://iconmonstr.com/menu-1-svg/ -->
-        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path id="menuButtonPath" d="M24 6h-24v-4h24v4zm0 4h-24v4h24v-4zm0 8h-24v4h24v-4z"/></svg>
-        <ul class="nav">
+      <div class="header__dropdown">
+        <div id="menuIconContainer">
+          <!-- Icon from https://iconmonstr.com/menu-1-svg/ -->
+          <svg xmlns="http://www.w3.org/2000/svg" class="header__icon" id="menuButton" width="24" height="24" viewBox="0 0 24 24"><path  id="menuButtonPath" d="M24 6h-24v-4h24v4zm0 4h-24v4h24v-4zm0 8h-24v4h24v-4z"/></svg>
+        </div>
+        <ul class="nav" id="navList">
           <li class="nav__item">
             <a href="#">My story</a>
           </li>
