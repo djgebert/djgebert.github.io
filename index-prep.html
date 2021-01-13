@@ -7,21 +7,22 @@
   <link rel="preconnect" href="https://fonts.gstatic.com">
   <link rel="preconnect" href="https://fonts.gstatic.com">
   <link rel="preconnect" href="https://fonts.gstatic.com">
-<link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&display=swap" rel="stylesheet">  
-  <link rel="stylesheet" href="./css/global.css">
+  <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&display=swap" rel="stylesheet">  
+  <link rel="stylesheet" href="./css/styles.css">
+  <script src="./js/main.js"></script>
 </head>
 <body>
   <!-- Page container-->
-  <div class="page-container">
+  <div id="page-container">
     <!-- Navbar -->
     <div class="header section">
       <div class="header__logo">
         DG
       </div>
       <div><!-- Empty to fill space --></div>
-      <div class="header__dropdown">
+      <div class="header__dropdown" id="menuButton">
         <!-- Menu icon from https://iconmonstr.com/menu-1-svg/ -->
-        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path d="M24 6h-24v-4h24v4zm0 4h-24v4h24v-4zm0 8h-24v4h24v-4z"/></svg>
+        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path id="menuButtonPath" d="M24 6h-24v-4h24v4zm0 4h-24v4h24v-4zm0 8h-24v4h24v-4z"/></svg>
         <ul class="nav">
           <li class="nav__item">
             <a href="#">My story</a>
