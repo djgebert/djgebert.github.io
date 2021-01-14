@@ -2,18 +2,15 @@
   box-sizing: border-box;
   
   /* Colours */
-  --vivid-sky-blue: hsl(194, 85%, 62%);
-  --ultramarine-blue:hsl(229, 83%, 60%);
-  --trypan-blue: hsl(258, 86%, 34%);
-  --purple: hsl(276, 91%, 38%);
+  --background1: #aacaaa;
+  --background2:#aabaca;
+  --background3:#caaaca;
+  --background4: #cabaaa;
   --flickr-pink: hsl(333, 93%, 56%);
   background-color: white;
   color: black;
 
-  /* Transition length for menu */
-  --menu-transition-length: 0.1s;
-
-  /* Fonts */
+    /* Fonts */
   font-family: 'Open Sans', Verdana, sans-serif;
   font-size: 20px;
   line-height: 1.6rem;
@@ -56,27 +53,27 @@ a:hover, a:active {
   display: grid;
   grid-template-columns: auto 1fr auto;
   position: relative;
-  background-color: red;
+  z-index: 2;
+  background-color: white;
 }
 
 .header__icon {
-  transition: transform var(--menu-transition-length);
+  transition: transform 0.1s;
   transform: scaleY(1); 
 }
 
 .nav {
   list-style-type: none;
   background-color: white;
-  z-index: 1;
   position: absolute;
+  z-index: 1;
   right: 0;
-  top: 2rem;
-  bottom: auto;
+  top: -15rem;
   padding: 1rem 2rem 1rem 2rem;
   min-width: 160px;
   min-width: 160px;
   box-shadow: -16px 16px 10px 0px rgba(0,0,0,0.5);
-  transition: bottom var(--menu-transition-length), top var(--menu-transition-length);
+  transition: top 0.25s;
 }
 
 .nav__item {
@@ -119,11 +116,11 @@ a:hover, a:active {
 }
 
 #tally-investment-records {
-  background-color: var(--ultramarine-blue);
+  background-color: var(--background2);
 }
 
 #collected-wisdom {
-  background-color: var(--trypan-blue);
+  background-color: var(--background3);
 }
 
 #my-other-life {
